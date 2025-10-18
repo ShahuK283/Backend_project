@@ -14,17 +14,27 @@ csv-parser (for CSV reading)
 multer (for file uploads)
 dotenv (for environment variables)
 
+# Install Node.js and npm
+node -v  
+npm -v  
+
+# Install dependencies
+npm init -y  
+npm install express mysql2 multer csv-parser dotenv  
+
+
+
 # Create a .env file in the root folder:
-DB_HOST=localhost
-DB_USER=root
-DB_PASSWORD=yourpassword
-DB_NAME=productsdb
-DB_PORT=3306
+DB_HOST=localhost  
+DB_USER=root  
+DB_PASSWORD=yourpassword  
+DB_NAME=productsdb  
+DB_PORT=3306  
 
 
 # Setup Instruction
-To connect the data MySQL is used so make sure it is installed.
-If not this is the link : https://dev.mysql.com/downloads/installer
+To connect the data MySQL is used so make sure it is installed.  
+If not this is the link : https://dev.mysql.com/downloads/installer  
 
 # Now for creating the database:
 
@@ -41,9 +51,9 @@ CREATE TABLE IF NOT EXISTS products (
   quantity INT NOT NULL  
 );
 
-Enable local infile support: SET GLOBAL local_infile = 1;
-Start MySQL client with: "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --local-infile=1 -u root -p
-Run inside your database:  USE productsdb;
+Enable local infile support: SET GLOBAL local_infile = 1;  
+Start MySQL client with: "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --local-infile=1 -u root -p  
+Run inside your database:  USE productsdb;  
 
 # Running the Server
 node index.js
