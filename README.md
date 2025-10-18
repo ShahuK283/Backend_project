@@ -30,15 +30,15 @@ If not this is the link : https://dev.mysql.com/downloads/installer
 
 CREATE DATABASE IF NOT EXISTS productsdb;
 USE productsdb;
-CREATE TABLE IF NOT EXISTS products (
-  sku VARCHAR(50) PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  brand VARCHAR(50) NOT NULL,
-  color VARCHAR(30),
-  size VARCHAR(10),
-  mrp DECIMAL(10,2) NOT NULL,
-  price DECIMAL(10,2) NOT NULL,
-  quantity INT NOT NULL
+CREATE TABLE IF NOT EXISTS products (  
+  sku VARCHAR(50) PRIMARY KEY,  
+  name VARCHAR(100) NOT NULL,  
+  brand VARCHAR(50) NOT NULL,  
+  color VARCHAR(30),  
+  size VARCHAR(10),  
+  mrp DECIMAL(10,2) NOT NULL,  
+  price DECIMAL(10,2) NOT NULL,  
+  quantity INT NOT NULL  
 );
 
 Enable local infile support: SET GLOBAL local_infile = 1;
