@@ -1,18 +1,18 @@
 # Backend_project
 
 # Features
-Bulk Upload: Import and validate products from a CSV file.
-Error Reporting: Invalid rows are saved to a separate CSV for easy correction.
-Paginated View: Browse all products with simple page navigation.
-Search: Filter products by brand, color, or price range.
-Product Management: Update and delete products by their SKU.
+Bulk Upload: Import and validate products from a CSV file.  
+Error Reporting: Invalid rows are saved to a separate CSV for easy correction.  
+Paginated View: Browse all products with simple page navigation.  
+Search: Filter products by brand, color, or price range.  
+Product Management: Update and delete products by their SKU.  
 
 # Tech Stack
-Node.js (Express.js framework)
-MySQL (for product database)
-csv-parser (for CSV reading)
-multer (for file uploads)
-dotenv (for environment variables)
+Node.js (Express.js framework)  
+MySQL (for product database)  
+csv-parser (for CSV reading)  
+multer (for file uploads)  
+dotenv (for environment variables)  
 
 # Install Node.js and npm
 node -v  
